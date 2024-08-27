@@ -1,0 +1,758 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "F1",
+        "name": "Windhoek Central Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/R3D21C49"
+        },
+        "position": {
+          "latitude": "17.0844",
+          "longitude": "-22.5609"
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "RH"
+              }
+            ],
+            "text": "Referral Hospital"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/F1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "F2",
+        "name": "Katutura State Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/R3D21C51"
+        },
+        "position": {
+          "latitude": "17.0659",
+          "longitude": "-22.5456"
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "hospital"
+              }
+            ],
+            "text": "Hospital"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/F2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "F3",
+        "name": "Onandjokwe Lutheran Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/R5D46C102"
+        },
+        "position": {
+          "latitude": "16.7141",
+          "longitude": "-17.8876"
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "hospital"
+              }
+            ],
+            "text": "Hospital"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/F3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "F4",
+        "name": "Oshakati Intermediate Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/R1D41C92"
+        },
+        "position": {
+          "latitude": "15.6955",
+          "longitude": "-17.7852"
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "RH"
+              }
+            ],
+            "text": "Referral Hospital"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/F4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "F5",
+        "name": "Rundu State Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/R8D15C34"
+        },
+        "position": {
+          "latitude": "19.7744",
+          "longitude": "-17.9247"
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "hospital"
+              }
+            ],
+            "text": "Hospital"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/F5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "F6",
+        "name": "Walvis Bay State Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/R4D2C4"
+        },
+        "position": {
+          "latitude": "14.5098",
+          "longitude": "-22.9485"
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "hospital"
+              }
+            ],
+            "text": "Hospital"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/F6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "F7",
+        "name": "Engela District Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/R6D29C68"
+        },
+        "position": {
+          "latitude": "15.8966",
+          "longitude": "-17.4581"
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "HC"
+              }
+            ],
+            "text": "District Hospital"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/F7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "F8",
+        "name": "Engela District Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/R6D29C68"
+        },
+        "position": {
+          "latitude": "15.8966",
+          "longitude": "-17.4581"
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "DH"
+              }
+            ],
+            "text": "District Hospital"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/F8"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "F9",
+        "name": "Okahao District Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/R7D37C84"
+        },
+        "position": {
+          "latitude": "15.0791",
+          "longitude": "-17.885"
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "DH"
+              }
+            ],
+            "text": "District Hospital"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/F9"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "F10",
+        "name": "Gobabis State Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/R14D32C74"
+        },
+        "position": {
+          "latitude": "18.9633",
+          "longitude": "-22.4474"
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "hospital"
+              }
+            ],
+            "text": "Hospital"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/F10"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "F11",
+        "name": "Outapi District Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/R7D36C82"
+        },
+        "position": {
+          "latitude": "15",
+          "longitude": "-17.5"
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "DH"
+              }
+            ],
+            "text": "District Hospital"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/F11"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "F12",
+        "name": "Keetmanshoop State Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/R13D13C29"
+        },
+        "position": {
+          "latitude": "18.1333",
+          "longitude": "-26.5833"
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "hospital"
+              }
+            ],
+            "text": "Hospital"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/F12"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "F13",
+        "name": "Mariental District Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/R12D7C16"
+        },
+        "position": {
+          "latitude": "17.9667",
+          "longitude": "-24.6333"
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "DH"
+              }
+            ],
+            "text": "District Hospital"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/F13"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "F14",
+        "name": "Katima Mulilo State Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/R9D51C112"
+        },
+        "position": {
+          "latitude": "24.2667",
+          "longitude": "-17.5"
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "hospital"
+              }
+            ],
+            "text": "Hospital"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/F14"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "F15",
+        "name": "Usakos Health Centre",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/R4D5C11"
+        },
+        "position": {
+          "latitude": "15.5967",
+          "longitude": "-22.0031"
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "HC"
+              }
+            ],
+            "text": "Health Center"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/F15"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "F16",
+        "name": "Swakopmund State Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/R4D1C1"
+        },
+        "position": {
+          "latitude": "14.5316",
+          "longitude": "-22.6836"
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "hospital"
+              }
+            ],
+            "text": "Hospital"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/F16"
+      }
+    }
+  ]
+}

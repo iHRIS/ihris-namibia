@@ -1,0 +1,115 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+      {
+        "fullUrl": "urn:uuid:d035adc5-15b0-57fb-a959-b42d0b2f4b9a",
+        "resource": {
+          "resourceType": "Practitioner",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-practitioner"
+            ]
+          },
+          "name": [
+            {
+              "family": "Mijumbi",
+              "given": [
+                "Nobert"
+              ]
+            }
+          ],
+          "birthDate": "1995-02-01",
+          "gender": "Féminin",
+          "extension": [
+            {
+              "valueCoding": {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-marital-status-codesystem",
+                "version": "0.4.0",
+                "code": "single",
+                "display": "Célibataire"
+              },
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-marital-status"
+            },
+            {
+              "valueCoding": {
+                "system": "",
+                "code": "",
+                "display": ""
+              },
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-nationality"
+            },
+            {
+              "valueString": "0774242956",
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-phone"
+            }
+          ],
+          "active": true,
+          "identifier": [
+            {
+              "value": "87124697900986",
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://ihris.org/fhir/CodeSystem/ihris-mdg-identifier-codesystem",
+                    "code": "CIN"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "request": {
+          "method": "POST",
+          "url": "Practitioner"
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:c45e09e3-b9ee-590c-a9db-6a5fc9907e92",
+        "resource": {
+          "resourceType": "PractitionerRole",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role"
+            ]
+          },
+          "practitioner": {
+            "reference": "urn:uuid:d035adc5-15b0-57fb-a959-b42d0b2f4b9a"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-job-chwr",
+                "version": "0.2.0",
+                "code": "AC",
+                "display": "Agent Communautaire"
+              }
+            ],
+            "text": "Agent Communautaire"
+          },
+          "location": {
+            "reference": "Location/FKT-CSB-MDG-10-01-087-0588"
+          },
+          "extension": [
+            {
+              "valueCoding": {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-workplace",
+                "version": "0.1.0",
+                "code": "fokontany",
+                "display": "Fokontany"
+              },
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-workplace"
+            }
+          ],
+          "active": true,
+          "period": {
+            "start": "2024-05-01"
+          }
+        },
+        "request": {
+          "method": "POST",
+          "url": "PractitionerRole"
+        }
+      }
+    ]
+  }
