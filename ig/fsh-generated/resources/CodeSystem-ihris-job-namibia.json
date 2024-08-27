@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisJobNamibiaCodeSystem",
+  "id": "ihris-job-namibia",
+  "title": "Job Titles",
+  "version": "0.1.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-job-namibia",
+  "concept": [
+    {
+      "code": "chew",
+      "display": "Community Health Worker"
+    },
+    {
+      "code": "hp",
+      "display": "Health Promoter"
+    },
+    {
+      "code": "ma",
+      "display": "Medical Assistant"
+    },
+    {
+      "code": "he",
+      "display": "Health Educator"
+    }
+  ],
+  "date": "2023-07-25T08:41:04.362Z",
+  "count": 4
+}

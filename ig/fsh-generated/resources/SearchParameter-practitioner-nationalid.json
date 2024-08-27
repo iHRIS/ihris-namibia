@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitioner-nationalid",
+  "url": "http://ihris.org/fhir/SearchParameter/practitioner-nationalid",
+  "name": "Search Parameter on  National id for practitioner",
+  "status": "active",
+  "description": "Search by National ID for a practitioner resource.",
+  "code": "nationalid",
+  "base": [
+    "Practitioner"
+  ],
+  "type": "string",
+  "expression": "Practitioner.identifier.where(type.coding.code='nationalIN').value",
+  "xpathUsage": "normal"
+}

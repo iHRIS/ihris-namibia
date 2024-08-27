@@ -1,0 +1,62 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "ihris-education-history",
+  "url": "http://ihris.org/fhir/Questionnaire/ihris-education-history",
+  "title": "iHRIS Education History Workflow",
+  "description": "iHRIS workflow to record a Education History",
+  "name": "ihris-education-history",
+  "status": "active",
+  "date": "2020-08-27",
+  "purpose": "Workflow page for recording a Education History information.",
+  "item": [
+    {
+      "linkId": "Basic",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.id",
+      "text": "Qualification/Education History",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Basic.extension[0]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.id",
+          "text": "Details",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "Basic.extension[0].extension[0]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:institution.value[x]:valueString",
+              "text": "Institution",
+              "type": "string",
+              "required": true,
+              "repeats": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[1]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:level.value[x]:valueCoding",
+              "text": "Qualification Level",
+              "type": "choice",
+              "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-education-level-valueset",
+              "required": true,
+              "repeats": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[2]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:qualification.value[x]:valueString",
+              "text": "Qualification Name",
+              "type": "string",
+              "required": true,
+              "repeats": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[4]#year",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:year.value[x]:valueDate",
+              "text": "Year Of Graduation",
+              "type": "date",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

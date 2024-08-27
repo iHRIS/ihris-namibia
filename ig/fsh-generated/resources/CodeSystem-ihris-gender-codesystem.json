@@ -1,0 +1,24 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisNamibiaGenderCodesystem",
+  "id": "ihris-gender-codesystem",
+  "title": "Gender",
+  "version": "0.3.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-gender-codesystem",
+  "concept": [
+    {
+      "code": "male",
+      "display": "Male",
+      "definition": "Male"
+    },
+    {
+      "code": "female",
+      "display": "Female",
+      "definition": "Female"
+    }
+  ],
+  "date": "2023-06-29T08:41:04.362Z",
+  "count": 2
+}

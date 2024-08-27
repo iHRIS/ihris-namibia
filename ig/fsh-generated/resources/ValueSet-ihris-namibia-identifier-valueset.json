@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "IhrisNamibiaIdentifierValueSet",
+  "id": "ihris-namibia-identifier-valueset",
+  "title": "iHRIS Namibia Identifier ValueSet",
+  "version": "0.5.0",
+  "url": "http://ihris.org/fhir/ValueSet/ihris-namibia-identifier-valueset",
+  "date": "2024-06-24T08:41:04.362Z",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ihris.org/fhir/CodeSystem/ihris-namibia-identifier"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisBankAccountTypeCodesystem",
+  "id": "ihris-bank-account-type-codesystem",
+  "title": "Bank Account Types",
+  "version": "0.3.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-bank-account-type-codesystem",
+  "concept": [
+    {
+      "code": "current",
+      "display": "Current Account"
+    },
+    {
+      "code": "savings",
+      "display": "Savings Account"
+    }
+  ],
+  "date": "2020-11-10T08:41:04.362Z",
+  "count": 2
+}

@@ -1,0 +1,34 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisNamibiaMaritalStatusCodeSystem",
+  "id": "ihris-marital-status-codesystem",
+  "title": "Marital Status",
+  "version": "0.4.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-marital-status-codesystem",
+  "concept": [
+    {
+      "code": "single",
+      "display": "Single"
+    },
+    {
+      "code": "married",
+      "display": "Married"
+    },
+    {
+      "code": "divorced",
+      "display": "Divorced"
+    },
+    {
+      "code": "widowed",
+      "display": "Widowed"
+    },
+    {
+      "code": "separated",
+      "display": "Separated"
+    }
+  ],
+  "date": "2023-07-14T08:41:04.362Z",
+  "count": 5
+}
