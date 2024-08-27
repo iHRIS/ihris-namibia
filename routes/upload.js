@@ -6,8 +6,8 @@ const nconf = ihrissmartrequire('modules/config')
 const fhirAxios = nconf.fhirAxios
 const outcomes = ihrissmartrequire('config/operationOutcomes')
 const logger = ihrissmartrequire('winston')
-const bulkRegistration = ihrissmartrequire("bulkRegistration")
-const utils = ihrissmartrequire("utils")
+const bulkRegistration = ihrissmartrequire("modules/bulkRegistration")
+const utils = ihrissmartrequire("modules/utils")
 
 router.get("/csvTemplate", (req, res) => {
   let p = path.join(__dirname, "../", "file/sampleInput.xlsx");

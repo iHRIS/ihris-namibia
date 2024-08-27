@@ -5,7 +5,7 @@
   "name": "IhrisFacilityType",
   "id": "ihris-facility-type",
   "title": "Facility Type",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
   "concept": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "code": "HC",
-      "display": "Health Centre"
+      "display": "Health Center"
     },
     {
       "code": "RHO",
@@ -39,8 +39,16 @@
     {
       "code": "LAB",
       "display": "Laboratory"
+    },
+    {
+      "code": "RH",
+      "display": "Referral Hospital"
+    },
+    {
+      "code": "DH",
+      "display": "District Hospital"
     }
   ],
-  "date": "2022-02-25T08:41:04.362Z",
-  "count": 8
+  "date": "2023-02-25T08:41:04.362Z",
+  "count": 10
 }

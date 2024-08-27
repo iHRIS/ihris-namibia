@@ -30,11 +30,7 @@
         },
         {
           "url": "search",
-          "valueString": "Facility Type|type.coding.display"
-        },
-        {
-          "url": "search",
-          "valueString": "Facility Physical Type|physicalType.coding.display"
+          "valueString": "Facility Type|type.text"
         },
         {
           "url": "search",
@@ -115,11 +111,11 @@
         },
         {
           "url": "field",
-          "valueString": "Location.physicalType"
+          "valueString": "Location.type"
         },
         {
           "url": "field",
-          "valueString": "Location.type"
+          "valueString": "Location.physicalType"
         },
         {
           "url": "field",

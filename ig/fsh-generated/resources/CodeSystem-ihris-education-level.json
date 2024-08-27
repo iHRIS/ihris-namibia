@@ -5,7 +5,7 @@
   "name": "IhrisEducationLevel",
   "id": "ihris-education-level",
   "title": "Education Level",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-education-level",
   "concept": [
     {
@@ -39,11 +39,16 @@
       "definition": "PHD"
     },
     {
+      "code": "G12",
+      "display": "Grade 12",
+      "definition": "Grade 12"
+    },
+    {
       "code": "Others",
       "display": "Others",
       "definition": "Others"
     }
   ],
-  "date": "2022-10-29T08:41:04.362Z",
-  "count": 7
+  "date": "2023-10-29T08:41:04.362Z",
+  "count": 8
 }
