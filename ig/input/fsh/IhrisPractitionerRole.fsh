@@ -38,7 +38,8 @@ Description:    "iHRIS profile of Practitioner Role."
     IhrisPractitionerRoleSalary named salary 0..1 MS and
     IhrisPractitionerRoleEmploymentTerms named employmentTerms 0..1 MS and
     IhrisPractitionerRoleReasonDeparture named reasonForDepature 0..1 MS and
-    IhrisPractitionerRoleSupervisor named supervisor 0..1 MS 
+    IhrisPractitionerRoleSupervisor named supervisor 0..1 MS and 
+    IhrisPractitionerRoleRecruitment named recruitmentEntity 0..1 MS
 * extension[salary].valueMoney MS
 * extension[salary] ^label = "Salary"
 * extension[employmentTerms].valueCoding MS
@@ -47,6 +48,37 @@ Description:    "iHRIS profile of Practitioner Role."
 * extension[reasonForDepature] ^label = "Reason for Departure"
 * extension[supervisor].valueCoding MS
 * extension[supervisor] ^label = "Supervisor Job Title"
+* extension[recruitmentEntity].valueCoding MS
+* extension[recruitmentEntity] ^label = "Recruitment Entity/Organization"
+
+Extension:      IhrisPractitionerRoleRecruitment
+Id:             ihris-practitionerrole-recruitment
+Title:          "iHRIS PratitionerRole Recruitment Entity"
+Description:    "iHRIS extension for PratitionerRole Recruitment Entity."
+* ^context.type = #element
+* ^context.expression = "PractitionerRole"
+* value[x] only Coding
+* valueCoding 0..1 MS
+* valueCoding ^label = "Recruitment Entity/Organization"
+* valueCoding from IhrisOrganizationValueSet (required)
+
+ValueSet:         IhrisOrganizationValueSet
+Id:               ihris-organization-valueset
+Title:            "iHRIS Organization ValueSet"
+* ^date = "2020-11-14T08:41:04.362Z"
+* ^version = "0.1.0"
+* codes from system IhrisOrganizationCodeSystem
+
+CodeSystem:      IhrisOrganizationCodeSystem
+Id:              ihris-organization-codesystem
+Title:           "iHRIS Organization CodeSystem"
+* ^date = "2020-11-14T08:41:04.362Z"
+* ^version = "0.1.0"    
+* #mohss "Ministry of Health and Social Services"
+* #CDC "CDC"
+* #WHO "WHO"
+* #UNICEF "UNICEF"
+* #PEPFAR "PEPFAR"
 
 Extension:      IhrisPractitionerRoleSalary
 Id:             ihris-practitionerrole-salary
@@ -226,6 +258,24 @@ Usage:          #example
 * extension[section][0].extension[field][0].valueString = "CodeSystem.display"
 * extension[section][0].extension[field][1].valueString = "CodeSystem.code"
 * extension[section][0].extension[field][2].valueString = "CodeSystem.definition"
+
+Instance:       ihris-page-organization
+InstanceOf:     IhrisPage
+Title:          "iHRIS Organization CodeSystem Page"
+Usage:          #example
+* code = IhrisResourceCodeSystem#page
+* extension[display].extension[resource].valueReference = Reference(CodeSystem/ihris-organization-codesystem)
+* extension[display].extension[search][0].valueString = "Code|code"
+* extension[display].extension[search][1].valueString = "Display|display"
+* extension[display].extension[field][0].extension[path].valueString = "CodeSystem.code"
+* extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
+* extension[section][0].extension[title].valueString = "Organization"
+* extension[section][0].extension[description].valueString = "Organization"
+* extension[section][0].extension[name].valueString = "CodeSystem"
+* extension[section][0].extension[field][0].valueString = "CodeSystem.display"
+* extension[section][0].extension[field][1].valueString = "CodeSystem.code"
+* extension[section][0].extension[field][2].valueString = "CodeSystem.definition"
+
 
 Instance:       IhrisPractitionerWorkflowEndRole
 InstanceOf:     IhrisQuestionnaire

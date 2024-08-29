@@ -108,6 +108,15 @@
           "repeats": false
         },
         {
+          "linkId": "Practitioner.extension[5]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:language.value[x]:valueCoding",
+          "text": "Languages",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-languages-valueset",
+          "required": false,
+          "repeats": true
+        },
+        {
           "linkId": "Practitioner.active",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.active",
           "text": "Active",
@@ -295,6 +304,15 @@
           "type": "choice",
           "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-job-namibia",
           "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "PractitionerRole.extension[2]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:recruitmentEntity.value[x]:valueCoding",
+          "text": "Recruitment Entity/Organization",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-organization-valueset",
+          "required": true,
           "repeats": false
         }
       ]

@@ -1,0 +1,69 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisNamibiaLanguagesCodesystem",
+  "id": "ihris-languages-codesystem",
+  "title": "Languages",
+  "version": "0.2.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-languages-codesystem",
+  "concept": [
+    {
+      "code": "english",
+      "display": "English",
+      "definition": "English"
+    },
+    {
+      "code": "afrikaans",
+      "display": "Afrikaans",
+      "definition": "Afrikaans"
+    },
+    {
+      "code": "german",
+      "display": "German",
+      "definition": "German"
+    },
+    {
+      "code": "portuguese",
+      "display": "Portuguese",
+      "definition": "Portuguese"
+    },
+    {
+      "code": "french",
+      "display": "French",
+      "definition": "French"
+    },
+    {
+      "code": "otjiherero",
+      "display": "Otjiherero",
+      "definition": "Otjiherero"
+    },
+    {
+      "code": "khoekhoegowab",
+      "display": "Khoekhoegowab",
+      "definition": "Khoekhoegow"
+    },
+    {
+      "code": "oshiwambo",
+      "display": "Oshiwambo",
+      "definition": "Oshiwambo"
+    },
+    {
+      "code": "ruKwangali",
+      "display": "RuKwangali",
+      "definition": "RuKwangali"
+    },
+    {
+      "code": "setswana",
+      "display": "Setswana",
+      "definition": "Setswana"
+    },
+    {
+      "code": "siLozi",
+      "display": "siLozi",
+      "definition": "siLozi"
+    }
+  ],
+  "date": "2020-09-29T08:41:04.362Z",
+  "count": 11
+}

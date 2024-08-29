@@ -95,11 +95,19 @@ Usage:          #definition
 * item[0].item[7].required = false
 * item[0].item[7].repeats = false
 
-* item[0].item[8].linkId = "Practitioner.active"
-* item[0].item[8].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.active"
-* item[0].item[8].text = "Active"
-* item[0].item[8].type = #boolean
-* item[0].item[8].required = true
+* item[0].item[8].linkId = "Practitioner.extension[5]"
+* item[0].item[8].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:language.value[x]:valueCoding"
+* item[0].item[8].text = "Languages"
+* item[0].item[8].type = #choice
+* item[0].item[8].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-languages-valueset"
+* item[0].item[8].required = false
+* item[0].item[8].repeats = true
+
+* item[0].item[9].linkId = "Practitioner.active"
+* item[0].item[9].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.active"
+* item[0].item[9].text = "Active"
+* item[0].item[9].type = #boolean
+* item[0].item[9].required = true
 
 * item[1].linkId = "__Practitioner:contact"
 * item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner"
@@ -220,6 +228,14 @@ Usage:          #definition
 * item[2].item[6].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-job-namibia"
 * item[2].item[6].required = false
 * item[2].item[6].repeats = false
+
+* item[2].item[7].linkId = "PractitionerRole.extension[2]"
+* item[2].item[7].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:recruitmentEntity.value[x]:valueCoding"
+* item[2].item[7].text = "Recruitment Entity/Organization"
+* item[2].item[7].type = #choice
+* item[2].item[7].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-organization-valueset"
+* item[2].item[7].required = true
+* item[2].item[7].repeats = false
 
 * item[3].linkId = "Practitioner.identifier"
 * item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier"

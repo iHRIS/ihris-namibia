@@ -1,0 +1,34 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisOrganizationCodeSystem",
+  "id": "ihris-organization-codesystem",
+  "title": "iHRIS Organization CodeSystem",
+  "version": "0.1.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-organization-codesystem",
+  "concept": [
+    {
+      "code": "mohss",
+      "display": "Ministry of Health and Social Services"
+    },
+    {
+      "code": "CDC",
+      "display": "CDC"
+    },
+    {
+      "code": "WHO",
+      "display": "WHO"
+    },
+    {
+      "code": "UNICEF",
+      "display": "UNICEF"
+    },
+    {
+      "code": "PEPFAR",
+      "display": "PEPFAR"
+    }
+  ],
+  "date": "2020-11-14T08:41:04.362Z",
+  "count": 5
+}

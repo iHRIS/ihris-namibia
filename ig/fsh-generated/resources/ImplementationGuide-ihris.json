@@ -344,6 +344,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ihris-practitioner-language"
+        },
+        "name": "iHRIS Practitioner Language",
+        "description": "iHRIS extension for Practitioner language.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ihris-practitioner-marital-status"
         },
         "name": "iHRIS Practitioner Marital Status",
@@ -412,6 +420,14 @@
         },
         "name": "iHRIS Job Description Reason for Departure",
         "description": "iHRIS extension for Job Description Reason for Departure.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ihris-practitionerrole-recruitment"
+        },
+        "name": "iHRIS PratitionerRole Recruitment Entity",
+        "description": "iHRIS extension for PratitionerRole Recruitment Entity.",
         "exampleBoolean": false
       },
       {
@@ -782,6 +798,13 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ihris-languages-valueset"
+        },
+        "name": "iHRIS Languages ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/ihris-marital-status-valueset"
         },
         "name": "iHRIS Marital ValueSet",
@@ -792,6 +815,13 @@
           "reference": "ValueSet/ihris-namibia-racial-group"
         },
         "name": "iHRIS Racial Group ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ihris-organization-valueset"
+        },
+        "name": "iHRIS Organization ValueSet",
         "exampleBoolean": false
       },
       {
@@ -1137,6 +1167,13 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/ihris-languages-codesystem"
+        },
+        "name": "Languages",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/ihris-marital-status-codesystem"
         },
         "name": "Marital Status",
@@ -1147,6 +1184,13 @@
           "reference": "CodeSystem/ihris-namibia-racial-group-codesystem"
         },
         "name": "Racial Group",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ihris-organization-codesystem"
+        },
+        "name": "iHRIS Organization CodeSystem",
         "exampleBoolean": false
       },
       {
@@ -1547,9 +1591,23 @@
       },
       {
         "reference": {
+          "reference": "Basic/ihris-page-languages"
+        },
+        "name": "iHRIS Languages CodeSystem Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-page-location"
         },
         "name": "iHRIS Location Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-page-organization"
+        },
+        "name": "iHRIS Organization CodeSystem Page",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
       },
       {

@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2024-08-29T16:30:51.679Z",
+        "when": "2024-08-29T18:27:14.341Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "QHlT630CWzXRn4dmUVMaUlrMxSkvwQGneqyvzC2aHi/5v6hKJmU1tgJ2bOBXVUfvOFMqwky6OE8bXJLRoRYVrKfQdcQH5nIFodzuUimnk57RUzGHL8c7ASWBPFc40OUGSqbfYpnrGW5cUgGwiNsDnTtM59SJgpuqPOc/kxAZBbw="
+        "data": "TzgS1fzIBj0gh0MADJfkExERGZAsqqmy/sAvy1duwCof3ezs/5tq8UA+HILMWTlxJwwE+UBVdfmAP7jwjZ7Hz83U7dUW+rdWPWEhSgS2F0xgSzar+nsR74oJt7/f4jGPbsZHfCBa8TOrRLP85XYAiXe2UOV5n44LXAIPmmYqW04="
       }
     },
     {
@@ -393,6 +393,30 @@
         {
           "name": "site:nav:menu:database:menu:otherLists:menu:racialGroup:order",
           "valueString": "2"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:organisation:text",
+          "valueString": "Organization"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:organisation:url",
+          "valueString": "/resource/search/organization"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:organisation:order",
+          "valueString": "3"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:languages:text",
+          "valueString": "Languages"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:languages:url",
+          "valueString": "/resource/search/languages"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:languages:order",
+          "valueString": "4"
         },
         {
           "name": "site:nav:menu:manage-report:text",

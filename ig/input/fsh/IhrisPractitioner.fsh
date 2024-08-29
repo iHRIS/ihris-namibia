@@ -81,7 +81,8 @@ Description:    "iHRIS profile of Practitioner."
     IhrisPractitionerNationality named nationality 0..1 and
     IhrisPractitionerMaritalStatus named maritalStatus 0..1 and
     IhrisPractitionerRacialGroup named racialGroup 0..1 and
-    IhrisPractitionerPhysicalStatus named physicalStatus 0..1 MS
+    IhrisPractitionerPhysicalStatus named physicalStatus 0..1 MS and
+    IhrisPractitionerLanguage named language 0..* MS
 * extension[residence] ^label = "Residence"
 * extension[residence].valueReference.reference MS
 * extension[nationality]  ^label = "Nationality"
@@ -92,8 +93,45 @@ Description:    "iHRIS profile of Practitioner."
 * extension[racialGroup].valueCoding MS
 * extension[physicalStatus].valueCoding MS
 * extension[physicalStatus] ^label = "Person with Disability"
+* extension[language] ^label = "Language"
+* extension[language].valueCoding MS
 * active 1..1 MS
 * active ^label = "Active"
+
+Extension:      IhrisPractitionerLanguage
+Id:             ihris-practitioner-language
+Title:          "iHRIS Practitioner Language"
+Description:    "iHRIS extension for Practitioner language."
+* ^context.type = #element
+* ^context.expression = "Practitioner"
+* value[x] only Coding
+* valueCoding 1..1 MS
+* valueCoding ^label = "Language"
+* valueCoding from IhrisNamibiaLanguagesValueSet (required)
+
+CodeSystem:      IhrisNamibiaLanguagesCodesystem
+Id:              ihris-languages-codesystem
+Title:           "Languages"
+* ^date = "2020-09-29T08:41:04.362Z"
+* ^version = "0.2.0"
+* #english "English" "English"
+* #afrikaans "Afrikaans" "Afrikaans"
+* #german "German" "German"
+* #portuguese "Portuguese" "Portuguese"
+* #french "French" "French"
+* #otjiherero "Otjiherero" "Otjiherero"
+* #khoekhoegowab "Khoekhoegowab" "Khoekhoegow"
+* #oshiwambo "Oshiwambo" "Oshiwambo"
+* #ruKwangali "RuKwangali" "RuKwangali"
+* #setswana "Setswana" "Setswana"
+* #siLozi "siLozi" "siLozi"
+
+ValueSet:         IhrisNamibiaLanguagesValueSet
+Id:               ihris-languages-valueset
+Title:            "iHRIS Languages ValueSet"
+* ^date = "2020-09-29T08:41:04.362Z"
+* ^version = "0.2.0"
+* codes from system IhrisNamibiaLanguagesCodesystem
 
 Extension:      IhrisPractitionerOtherName
 Id:             ihris-practitioner-othername
@@ -269,7 +307,22 @@ Usage:          #example
 * extension[section][0].extension[field][1].valueString = "CodeSystem.code"
 * extension[section][0].extension[field][2].valueString = "CodeSystem.definition"
 
-
+Instance:      ihris-page-languages
+InstanceOf:    IhrisPage
+Title:         "iHRIS Languages CodeSystem Page"
+Usage:         #example
+* code = IhrisResourceCodeSystem#page
+* extension[display].extension[resource].valueReference = Reference(CodeSystem/ihris-languages-codesystem)
+* extension[display].extension[search][0].valueString = "Code|code"
+* extension[display].extension[search][1].valueString = "Display|display"
+* extension[display].extension[field][0].extension[path].valueString = "CodeSystem.code"
+* extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
+* extension[section][0].extension[title].valueString = "Languages"
+* extension[section][0].extension[description].valueString = "Languages"
+* extension[section][0].extension[name].valueString = "CodeSystem"
+* extension[section][0].extension[field][0].valueString = "CodeSystem.display"
+* extension[section][0].extension[field][1].valueString = "CodeSystem.code"
+* extension[section][0].extension[field][2].valueString = "CodeSystem.definition"
 
 /*CodeSystem:      IhrisNamibiaPhysicalStatusCodeSystem
 Id:              ihris-physical-status-codesystem

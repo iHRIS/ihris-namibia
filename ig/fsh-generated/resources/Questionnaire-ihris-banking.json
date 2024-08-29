@@ -66,6 +66,14 @@
               "type": "string",
               "required": true,
               "repeats": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[5]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-banking#Basic.extension:banking.extension:letter.value[x]:valueAttachment",
+              "text": "Bank Letter",
+              "type": "attachment",
+              "required": false,
+              "repeats": false
             }
           ]
         }

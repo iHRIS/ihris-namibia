@@ -13,6 +13,7 @@ Description:    "iHRIS Profile of the Basic resource for Banking."
 * extension[banking].extension[accountType].valueCoding 1..1 MS
 * extension[banking].extension[bankName].valueString 1..1 MS
 * extension[banking].extension[bankBranch].valueString 0..1 MS
+* extension[banking].extension[letter].valueAttachment 0..1 MS
     
 Extension:      IhrisBanking
 Id:             ihris-banking
@@ -21,7 +22,8 @@ Title:          "Banking details"
     accountNumber 1..1 MS and
     accountType 0..1 MS and
     bankName 1..1 MS and
-    bankBranch 0..1 MS
+    bankBranch 0..1 MS and
+    letter 0..1 MS
 * extension[accountName].value[x] only string
 * extension[accountName].valueString 1..1 MS
 * extension[accountName].valueString ^label = "Account Name"
@@ -38,6 +40,9 @@ Title:          "Banking details"
 * extension[bankBranch].value[x] only string
 * extension[bankBranch].valueString MS
 * extension[bankBranch].valueString ^label = "Bank Branch"
+* extension[letter].value[x] only Attachment
+* extension[letter].valueAttachment MS
+* extension[letter].valueAttachment ^label = "Bank Letter"
 
 CodeSystem:      IhrisBankAccountTypeCodesystem
 Id:              ihris-bank-account-type-codesystem
@@ -112,6 +117,13 @@ Usage:          #definition
 * item[0].item[0].item[4].required = true
 * item[0].item[0].item[4].repeats = false
 
+* item[0].item[0].item[5].linkId = "Basic.extension[0].extension[5]"
+* item[0].item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-banking#Basic.extension:banking.extension:letter.value[x]:valueAttachment"
+* item[0].item[0].item[5].text = "Bank Letter"
+* item[0].item[0].item[5].type = #attachment
+* item[0].item[0].item[5].required = false
+* item[0].item[0].item[5].repeats = false
+
 Instance:       ihris-page-banking
 InstanceOf:     IhrisPage
 Title:          "iHRIS Basic Banking Page"
@@ -141,6 +153,7 @@ Usage:          #example
 * extension[section][0].extension[field][3].valueString = "Basic.extension:banking.extension:accountType.value[x]:valueCoding"
 * extension[section][0].extension[field][4].valueString = "Basic.extension:banking.extension:bankName.value[x]:valueString"
 * extension[section][0].extension[field][5].valueString = "Basic.extension:banking.extension:bankBranch.value[x]:valueString"
+* extension[section][0].extension[field][6].valueString = "Basic.extension:banking.extension:letter.value[x]:valueAttachment"
 
 Instance:       ihris-page-account-type
 InstanceOf:     IhrisPage
