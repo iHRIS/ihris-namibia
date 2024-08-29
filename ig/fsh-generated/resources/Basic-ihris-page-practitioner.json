@@ -34,7 +34,7 @@
         },
         {
           "url": "search",
-          "valueString": "Other name|Practitioner.name.extension:otherName"
+          "valueString": "Other name|Practitioner.name.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-othername').valueString"
         },
         {
           "url": "search",
@@ -132,7 +132,7 @@
         },
         {
           "url": "field",
-          "valueString": "Practitioner.extension:maritalStatus"
+          "valueString": "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-marital-status').valueCoding.display"
         },
         {
           "url": "field",
@@ -140,15 +140,11 @@
         },
         {
           "url": "field",
-          "valueString": "Practitioner.extension:racialGroup"
+          "valueString": "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-racial-group').valueCoding.display"
         },
         {
           "url": "field",
-          "valueString": "Practitioner.extension:nationality"
-        },
-        {
-          "url": "field",
-          "valueString": "Practitioner.extension:residence"
+          "valueString": "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-nationality').valueCoding.display"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"
@@ -293,7 +289,7 @@
                 },
                 {
                   "url": "field",
-                  "valueString": "PractitionerRole.extension:employmentTerms"
+                  "valueString": "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-employment-terms').valueCoding.display"
                 }
               ],
               "url": "column"
@@ -306,7 +302,7 @@
                 },
                 {
                   "url": "field",
-                  "valueString": "PractitionerRole.extension:supervisor"
+                  "valueString": "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-supervisor').valueCoding.display"
                 }
               ],
               "url": "column"

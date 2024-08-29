@@ -231,10 +231,10 @@ const template = async (users) => {
                             text: user["FirstName"] + " " + user["Surname"] + " " + user["OtherNames"],
                             given: user["FirstName"],
                             family: user["Surname"],
-                            extension: {
-                              url: "http://ihirs.org/fhir/StructureDefinition/ihris-practitioner-othername",
+                            extension: [{
+                              url: "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-othername",
                               valueString: user["OtherNames"]
-                            }
+                            }]
                         }
                     ],
                     gender: user["genderCoding"].code,
@@ -325,7 +325,7 @@ const template = async (users) => {
                       },
                       {
                         url: "year",
-                        valueDate: user["Year"]
+                        valueDate: user["YearObtained"]
                       }
                     ],
                   },

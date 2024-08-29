@@ -134,7 +134,7 @@ const processQuestionnaire = async (dest, questions) => {
   }
 }
 
-const processAudit = async (dest, audits) => {
+const processAuditEvent = async (dest, audits) => {
   try {
     console.log("Getting AuditEvents..")
     let results = await axios.get(dest, { _count: 100 } )
@@ -186,12 +186,12 @@ const start = async() => {
  let deleteFunctions = ["AuditEvent","QuestionnaireResponse","Basic","PractitionerRole","Practitioner"]
  //let entries = []
  for(let func of deleteFunctions) {
-  let delEntries = []
+  /*let delEntries = []
   let Lookup = URI(server).segment(func).toString()
   let runProcess = "process"+func
   await runProcess( auditLookup, audits )
-  await saveBundle(audits)
-  if (func == "Audit" ){
+  await saveBundle(audits)*/
+  if (func == "AuditEvent" ){
     //Deleting AuditEvent Resources
     let audits = []
     let auditLookup = URI(server).segment("AuditEvent").toString()

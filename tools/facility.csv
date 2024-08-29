@@ -1,17 +1,17 @@
-id,FacilityType,Constituency Name,name,longitude,latitude,constituency,type,code
-1,Referral Hospital,Windhoek Central,Windhoek Central Hospital,-22.5609,17.0844,R3D21C49,RH,F1
-2,Hospital,Katutura,Katutura State Hospital,-22.5456,17.0659,R3D21C51,hospital,F2
-3,Hospital,Onandjokwe Urban,Onandjokwe Lutheran Hospital,-17.8876,16.7141,R5D46C102,hospital,F3
-4,Referral Hospital,Oshakati Urban,Oshakati Intermediate Hospital,-17.7852,15.6955,R1D41C92,RH,F4
-5,Hospital,Rundu Urban,Rundu State Hospital,-17.9247,19.7744,R8D15C34,hospital,F5
-6,Hospital,Walvis Bay Urban,Walvis Bay State Hospital,-22.9485,14.5098,R4D2C4,hospital,F6
-7,District Hospital,Ohangwena Rural,Engela District Hospital,-17.4581,15.8966,R6D29C68,HC,F7
-8,District Hospital,Ohangwena Rural,Engela District Hospital,-17.4581,15.8966,R6D29C68,DH,F8
-9,District Hospital,Okahao,Okahao District Hospital,-17.885,15.0791,R7D37C84,DH,F9
-10,Hospital,Gobabis Urban,Gobabis State Hospital,-22.4474,18.9633,R14D32C74,hospital,F10
-11,District Hospital,Outapi Urban,Outapi District Hospital,-17.5,15,R7D36C82,DH,F11
-12,Hospital,Keetmanshoop Urban,Keetmanshoop State Hospital,-26.5833,18.1333,R13D13C29,hospital,F12
-13,District Hospital,Mariental Urban,Mariental District Hospital,-24.6333,17.9667,R12D7C16,DH,F13
-14,Hospital,Katima Mulilo Urban,Katima Mulilo State Hospital,-17.5,24.2667,R9D51C112,hospital,F14
-15,Health Center,Usakos Urban,Usakos Health Centre,-22.0031,15.5967,R4D5C11,HC,F15
-16,Hospital,Swakopmund Urban,Swakopmund State Hospital,-22.6836,14.5316,R4D1C1,hospital,F16
+facility,longitude,latitude,community health workers
+Windhoek Central Hospital,-22.5609,17.0844,5
+Katutura State Hospital,-22.5456,17.0659,14
+Onandjokwe Lutheran Hospital,-17.8876,16.7141,14
+Oshakati Intermediate Hospital,-17.7852,15.6955,6
+Rundu State Hospital,-17.9247,19.7744,11
+Walvis Bay State Hospital,-22.9485,14.5098,8
+Engela District Hospital,-17.4581,15.8966,11
+Engela District Hospital,-17.4581,15.8966,11
+Okahao District Hospital,-17.885,15.0791,8
+Gobabis State Hospital,-22.4474,18.9633,14
+Outapi District Hospital,-17.5,15,14
+Keetmanshoop State Hospital,-26.5833,18.1333,15
+Mariental District Hospital,-24.6333,17.9667,8
+Katima Mulilo State Hospital,-17.5,24.2667,5
+Usakos Health Centre,-22.0031,15.5967,6
+Swakopmund State Hospital,-22.6836,14.5316,11

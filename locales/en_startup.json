@@ -55,7 +55,8 @@
       "Change Password": "Change Password",
       "Apps": "Apps",
       "Staff Directorate": "Staff Directorate",
-      "User Role Tasks": "User Role Tasks"
+      "User Role Tasks": "User Role Tasks",
+      "List of Active CHWR": "List of Active CHWR"
     },
     "intro": {},
     "ihris-codesystem": {},
@@ -561,6 +562,33 @@
       "Data visualizer welcome text3": " visualization based on the open data visualization.",
       "Visualizations": "Visualizations",
       "Dashboards": "Dashboards"
+    },
+    "reports": {
+      "Staff Directorate": "Staff Directorate",
+      "Fullname": "Fullname",
+      "Gender": "Gender",
+      "Date of Birth": "Date of Birth",
+      "Phone Number": "Phone Number",
+      "Staff Report": "Staff Report",
+      "Identifier(NID)": "Identifier(NID)",
+      "Given name": "Given name",
+      "Family name": "Family name",
+      "Other name": "Other name",
+      "BirthDate": "BirthDate",
+      "Citizenship": "Citizenship",
+      "Email": "Email",
+      "Marital Status": "Marital Status",
+      "Racial Group": "Racial Group",
+      "Supervisor": "Supervisor",
+      "Region": "Region",
+      "District": "District",
+      "Constituency": "Constituency",
+      "Facility/Place of work" : "Facility/Place of work",
+      "Salary": "Salary",
+      "Employment Terms": "Employment Terms",
+      "Start Date": "Start Date",
+      "End Date": "End Date",
+      "Job Title": "Job Title"
     }
   }
 }

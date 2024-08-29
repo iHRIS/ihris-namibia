@@ -66,10 +66,6 @@
           "valueString": "Facility|PractitionerRole.location"
         },
         {
-          "url": "search",
-          "valueString": "Specialty|PractitionerRole.specialty"
-        },
-        {
           "url": "filter",
           "valueString": "Job|role|http://ihris.org/fhir/ValueSet/ihris-job"
         }

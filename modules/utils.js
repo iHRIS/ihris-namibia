@@ -312,7 +312,7 @@ const setUserdata = async (req) => {
             logger.error(err.message);
           });
 
-          await getCodeSystem(usersData['i']["RacialGroup"], "ihris-namibia-racial-group")
+          await getCodeSystem(usersData[i]["RacialGroup"], "ihris-namibia-racial-group")
           .then((response) => {
             usersData[i].racialCoding = response;
           })
@@ -368,7 +368,7 @@ const setUserdata = async (req) => {
             logger.error(err.message);
           });
 
-          await getCodeSystem(usersData[i]["EmploymentTerms"], "ihris-employment-status-valueset")
+          await getCodeSystem(usersData[i]["EmploymentTerms"], "ihris-employment-terms-valueset")
           .then((response) => {
             usersData[i].employmentCoding = response;
           })

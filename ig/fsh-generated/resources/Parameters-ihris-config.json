@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2024-08-27T13:19:09.657Z",
+        "when": "2024-08-29T16:30:51.679Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "VVUTKbpYMyPXOueJ7Xu+gp+XKZynJAiGorjL2gtzLlhTYDcIfP5nBtGwolIJoCX9i0EY2xrUrNG2LwPyJKt2bHo0p+7uPvjDt2K0Ohj9NuD1KHbYwQsshUgd71wlzusICrZNA49oqNYwcHO0/w4E75rOSnDBu4LcwTE1xnvWW+o="
+        "data": "QHlT630CWzXRn4dmUVMaUlrMxSkvwQGneqyvzC2aHi/5v6hKJmU1tgJ2bOBXVUfvOFMqwky6OE8bXJLRoRYVrKfQdcQH5nIFodzuUimnk57RUzGHL8c7ASWBPFc40OUGSqbfYpnrGW5cUgGwiNsDnTtM59SJgpuqPOc/kxAZBbw="
       }
     },
     {
@@ -119,12 +119,32 @@
           "valueString": "mdi-chart-arc"
         },
         {
-          "name": "site:nav:menu:dashboard:url",
-          "valueString": "/ihrisapp/ihris-data-visualizer/index.html#/dashBuilder"
+          "name": "site:nav:menu:dashboard:menu:dashboarddefault:text",
+          "valueString": "CHW Dashboard"
         },
         {
-          "name": "site:nav:menu:dashboard:external",
+          "name": "site:nav:menu:dashboard:menu:dashboarddefault:url",
+          "valueString": "/ihrisapp/ihris-data-visualizer/index.html#/dashBuilder/2758"
+        },
+        {
+          "name": "site:nav:menu:dashboard:menu:dashboarddefault:external",
           "valueString": "true"
+        },
+        {
+          "name": "site:nav:menu:dashboard:menu:dashboarddefault:order",
+          "valueString": "0"
+        },
+        {
+          "name": "site:nav:menu:dashboard:menu:dashboardmap:text",
+          "valueString": "Map"
+        },
+        {
+          "name": "site:nav:menu:dashboard:menu:dashboardmap:url",
+          "valueString": "/dashboard/3a2d1260-650c-11ef-899a-f3538d8b5e1f"
+        },
+        {
+          "name": "site:nav:menu:dashboard:menu:dashboardmap:order",
+          "valueString": "1"
         },
         {
           "name": "site:nav:active",
@@ -412,15 +432,47 @@
         },
         {
           "name": "site:nav:menu:reports:menu:staff:url",
-          "valueString": "/report/ihris-es-report-staff-directorate"
+          "valueString": "/report/ihris-es-report-staff-directorate-nam"
         },
         {
           "name": "site:nav:menu:reports:menu:staff:order",
-          "valueString": "1"
+          "valueString": "2"
         },
         {
           "name": "site:nav:menu:reports:menu:staff:description",
           "valueString": "Staff Directorate"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:mainstaff:text",
+          "valueString": "CHWR List"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:mainstaff:url",
+          "valueString": "/report/ihris-es-report-staff"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:mainstaff:order",
+          "valueString": "0"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:mainstaff:description",
+          "valueString": "List of Active CHW"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:training:text",
+          "valueString": "Training Report"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:training:url",
+          "valueString": "/report/ihris-es-report-staff-training"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:training:order",
+          "valueString": "1"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:training:description",
+          "valueString": "Training Report for CHWs"
         },
         {
           "name": "site:nav:menu:users:text",

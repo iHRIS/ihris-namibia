@@ -4,9 +4,9 @@
   "name": "IhrisNamibiaRacialGroupValueSet",
   "id": "ihris-namibia-racial-group",
   "title": "iHRIS Racial Group ValueSet",
-  "version": "0.5.0",
+  "version": "0.7.0",
   "url": "http://ihris.org/fhir/ValueSet/ihris-namibia-racial-group",
-  "date": "2023-09-14T08:41:04.362Z",
+  "date": "2023-12-14T08:41:04.362Z",
   "compose": {
     "include": [
       {

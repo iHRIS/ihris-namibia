@@ -5,7 +5,7 @@
   "name": "IhrisNamibiaRacialGroupCodeSystem",
   "id": "ihris-namibia-racial-group-codesystem",
   "title": "Racial Group",
-  "version": "0.5.0",
+  "version": "0.7.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-namibia-racial-group-codesystem",
   "concept": [
     {
@@ -17,10 +17,10 @@
       "display": "White"
     },
     {
-      "code": "coloured",
-      "display": "Coloured"
+      "code": "colored",
+      "display": "Colored"
     }
   ],
-  "date": "2023-09-14T08:41:04.362Z",
+  "date": "2023-12-14T08:41:04.362Z",
   "count": 3
 }

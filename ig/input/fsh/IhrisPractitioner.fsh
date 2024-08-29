@@ -220,17 +220,17 @@ Description: "iHRIS extension for Practitioner Racial Group."
 CodeSystem:      IhrisNamibiaRacialGroupCodeSystem
 Id:              ihris-namibia-racial-group-codesystem
 Title:           "Racial Group"
-* ^date = "2023-09-14T08:41:04.362Z"
-* ^version = "0.5.0"
+* ^date = "2023-12-14T08:41:04.362Z"
+* ^version = "0.7.0"
 * #african "African"
 * #white "White"
-* #coloured "Coloured"
+* #colored "Colored"
 
 ValueSet:         IhrisNamibiaRacialGroupValueSet
 Id:               ihris-namibia-racial-group
 Title:            "iHRIS Racial Group ValueSet"
-* ^date = "2023-09-14T08:41:04.362Z"
-* ^version = "0.5.0"
+* ^date = "2023-12-14T08:41:04.362Z"
+* ^version = "0.7.0"
 * codes from system IhrisNamibiaRacialGroupCodeSystem
 
 CodeSystem:      IhrisRelationCodesystem

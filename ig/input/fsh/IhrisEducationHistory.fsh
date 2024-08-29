@@ -42,10 +42,11 @@ Title:          "Education History details"
 CodeSystem:      IhrisEducationLevel
 Id:              ihris-education-level
 Title:           "Education Level"
-* ^date = "2023-10-29T08:41:04.362Z"
-* ^version = "0.5.0"
+* ^date = "2023-12-29T08:41:04.362Z"
+* ^version = "0.7.0"
 * #Cerifiticate "Cerifiticate" "Cerifiticate"
 * #Diploma "Diploma" "Diploma"
+* #Bachelor "Bachelor" "Bachelor"
 * #Undergrad "Undergraduate" "Undergraduate"
 * #PGrad "Post Graduate" "Post Graduate"
 * #Masters "Masters" "Masters"
@@ -56,8 +57,8 @@ Title:           "Education Level"
 ValueSet:         IhrisEducationLevelValueSet
 Id:               ihris-education-level-valueset
 Title:            "iHRIS Education Level ValueSet"
-* ^date = "2023-10-29T08:41:04.362Z"
-* ^version = "0.5.0"
+* ^date = "2023-12-29T08:41:04.362Z"
+* ^version = "0.7.0"
 * codes from system IhrisEducationLevel
 
 /*CodeSystem:      IhrisInstitution
