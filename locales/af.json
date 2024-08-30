@@ -511,7 +511,18 @@
       "Identifier Type": "",
       "Identifier Types": "",
       "Initial Password": "",
-      "In-Service Training Type": ""
+      "In-Service Training Type": "",
+      "Scanned Document": "",
+      "Attachment Name": "",
+      "Date Uploaded": "",
+      "Document": "",
+      "Upload Date": "",
+      "Scanned Document Information": "",
+      "Health Practitioner": "",
+      "Basic": "",
+      "": "",
+      "Scanned Documents": "",
+      "Add Scanned Document": ""
     },
     "hardcoded-texts": {
       "must be an integer": "",

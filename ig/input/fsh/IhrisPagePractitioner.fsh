@@ -68,18 +68,15 @@ Usage:          #example
 * extension[section][3].extension[resource].extension[action][0].extension[emptyDisplay].valueBoolean = true
 * extension[section][3].extension[resource].extension[action][0].extension[condition].valueString = "PractitionerRole.period.end.exists()"
 * extension[section][3].extension[resource].extension[action][0].extension[class].valueString = "primary"
-* extension[section][3].extension[resource].extension[action][0].extension[task].valueId = "ihris-task-add-practitionerrole"
 * extension[section][3].extension[resource].extension[action][1].extension[link].valueString = "/resource/view/practitionerrole/ITEMID"
 * extension[section][3].extension[resource].extension[action][1].extension[text].valueString = "View"
 * extension[section][3].extension[resource].extension[action][1].extension[row].valueBoolean = true
 * extension[section][3].extension[resource].extension[action][1].extension[class].valueString = "primary"
-* extension[section][3].extension[resource].extension[action][1].extension[task].valueId = "ihris-task-view-practitionerrole"
 * extension[section][3].extension[resource].extension[action][2].extension[link].valueString = "/questionnaire/ihris-endrole/practitioner?practitionerrole=ITEMID"
 * extension[section][3].extension[resource].extension[action][2].extension[text].valueString = "End Job"
 * extension[section][3].extension[resource].extension[action][2].extension[row].valueBoolean = true
 * extension[section][3].extension[resource].extension[action][2].extension[condition].valueString = "PractitionerRole.period.end.empty()"
 * extension[section][3].extension[resource].extension[action][2].extension[class].valueString = "warning"
-* extension[section][3].extension[resource].extension[action][2].extension[task].valueId = "ihris-task-edit-practitionerrole"
 /* extension[section][4].extension[resource].extension[action][3].extension[link].valueString = "/questionnaire/ihris-promotion/practitioner?practitionerrole=ITEMID"
 * extension[section][4].extension[resource].extension[action][3].extension[text].valueString = "Enter Promotion"
 * extension[section][4].extension[resource].extension[action][3].extension[row].valueBoolean = true

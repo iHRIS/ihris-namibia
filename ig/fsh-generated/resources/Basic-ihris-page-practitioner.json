@@ -349,10 +349,6 @@
                 {
                   "url": "class",
                   "valueString": "primary"
-                },
-                {
-                  "url": "task",
-                  "valueId": "ihris-task-add-practitionerrole"
                 }
               ],
               "url": "action"
@@ -374,10 +370,6 @@
                 {
                   "url": "class",
                   "valueString": "primary"
-                },
-                {
-                  "url": "task",
-                  "valueId": "ihris-task-view-practitionerrole"
                 }
               ],
               "url": "action"
@@ -403,10 +395,6 @@
                 {
                   "url": "class",
                   "valueString": "warning"
-                },
-                {
-                  "url": "task",
-                  "valueId": "ihris-task-edit-practitionerrole"
                 }
               ],
               "url": "action"

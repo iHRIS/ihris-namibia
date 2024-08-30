@@ -205,6 +205,36 @@ Title:          "See Banking Section"
 * extension[attributes][0].extension[resource].valueCode = IhrisTaskResourceCodeSystem#section
 * extension[attributes][0].extension[instance].valueId = "banking"
 
+Instance:       ihris-task-add-banking
+InstanceOf:     IhrisTask
+Usage:          #example
+Title:          "Add Banking"
+* code = IhrisResourceCodeSystem#task
+* extension[name].valueString = "add-banking"
+* extension[attributes][0].extension[permission].valueCode = IhrisTaskPermissionCodeSystem#special
+* extension[attributes][0].extension[resource].valueCode = IhrisTaskResourceCodeSystem#special
+* extension[attributes][0].extension[instance].valueId = "add-banking"
+
+Instance:       ihris-task-edit-banking
+InstanceOf:     IhrisTask
+Usage:          #example
+Title:          "Edit Banking"
+* code = IhrisResourceCodeSystem#task
+* extension[name].valueString = "edit-banking"
+* extension[attributes][0].extension[permission].valueCode = IhrisTaskPermissionCodeSystem#special
+* extension[attributes][0].extension[resource].valueCode = IhrisTaskResourceCodeSystem#special
+* extension[attributes][0].extension[instance].valueId = "edit-banking"
+
+Instance:       ihris-task-view-banking
+InstanceOf:     IhrisTask
+Usage:          #example
+Title:          "View Banking"
+* code = IhrisResourceCodeSystem#task
+* extension[name].valueString = "view-banking"
+* extension[attributes][0].extension[permission].valueCode = IhrisTaskPermissionCodeSystem#special
+* extension[attributes][0].extension[resource].valueCode = IhrisTaskResourceCodeSystem#special
+* extension[attributes][0].extension[instance].valueId = "view-banking"
+
 Instance:       ihris-task-section-scanned-document
 InstanceOf:     IhrisTask
 Usage:          #example

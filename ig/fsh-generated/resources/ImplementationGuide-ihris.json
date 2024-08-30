@@ -1768,6 +1768,13 @@
       },
       {
         "reference": {
+          "reference": "Basic/ihris-task-add-banking"
+        },
+        "name": "Add Banking",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-task-add-education-history"
         },
         "name": "Add Education",
@@ -1799,6 +1806,13 @@
           "reference": "Basic/ihris-task-all-permissions-to-everything"
         },
         "name": "iHRIS Task With All Permissions To Everything",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-edit-banking"
+        },
+        "name": "Edit Banking",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
       },
       {
@@ -1995,6 +2009,13 @@
           "reference": "Basic/ihris-task-section-scanned-document"
         },
         "name": "See Scanned Document Section",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-view-banking"
+        },
+        "name": "View Banking",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
       },
       {
