@@ -150,7 +150,7 @@
         "reference": {
           "reference": "StructureDefinition/ihris-practitioner"
         },
-        "name": "iHRIS Practitioner",
+        "name": "Community Health Worker",
         "description": "iHRIS profile of Practitioner.",
         "exampleBoolean": false
       },
@@ -200,6 +200,14 @@
         },
         "name": "iHRIS Role",
         "description": "iHRIS Profile of the Basic resource to manage roles.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ihris-scanned-document"
+        },
+        "name": "Scanned Document Information",
+        "description": "Scanned Document Information Profile.",
         "exampleBoolean": false
       },
       {
@@ -600,10 +608,25 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/scanned-document"
+        },
+        "name": "Document",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/task-attributes"
         },
         "name": "Task Attributes",
         "description": "Task attributes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/upload-date"
+        },
+        "name": "Upload Date",
+        "description": "Upload Date.",
         "exampleBoolean": false
       },
       {
@@ -1654,6 +1677,13 @@
       },
       {
         "reference": {
+          "reference": "Basic/ihris-page-scanned-document"
+        },
+        "name": "Scanned Document Information Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-page-task"
         },
         "name": "iHRIS Tasks",
@@ -1738,9 +1768,65 @@
       },
       {
         "reference": {
+          "reference": "Basic/ihris-task-add-education-history"
+        },
+        "name": "Add Education",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-add-emergency"
+        },
+        "name": "Add Emergency",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-add-inservice-training"
+        },
+        "name": "Add Education",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-add-scanned-document"
+        },
+        "name": "Add Scanned Document",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-task-all-permissions-to-everything"
         },
         "name": "iHRIS Task With All Permissions To Everything",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-edit-education-history"
+        },
+        "name": "Edit Education History",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-edit-emergency"
+        },
+        "name": "Edit Emergency",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-edit-inservice-training"
+        },
+        "name": "Edit Inservice Training",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-edit-scanned-document"
+        },
+        "name": "Edit Scanned Document",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
       },
       {
@@ -1874,6 +1960,69 @@
           "reference": "Basic/ihris-task-read-value-set"
         },
         "name": "iHRIS Task To Read Valueset Resource",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-section-banking"
+        },
+        "name": "See Banking Section",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-section-education-history"
+        },
+        "name": "See Education History Section",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-section-emergency"
+        },
+        "name": "See Emergency Section",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-section-inservice-training"
+        },
+        "name": "See Inservice Training Section",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-section-scanned-document"
+        },
+        "name": "See Scanned Document Section",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-view-education-history"
+        },
+        "name": "View Education History",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-view-emergency"
+        },
+        "name": "View Emergency",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-view-inservice-training"
+        },
+        "name": "View Inservice Training",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-view-scanned-document"
+        },
+        "name": "View Scanned Document",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
       },
       {
@@ -2046,6 +2195,20 @@
       },
       {
         "reference": {
+          "reference": "Basic/nam-hr-manager"
+        },
+        "name": "Manager",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-role"
+      },
+      {
+        "reference": {
+          "reference": "Basic/nam-hr-staff"
+        },
+        "name": "Data Entrant",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-role"
+      },
+      {
+        "reference": {
           "reference": "DocumentReference/page-about"
         },
         "name": "iHRIS About Page",
@@ -2140,6 +2303,13 @@
           "reference": "SearchParameter/practitionerrole-related-practitioner"
         },
         "name": "practitionerrole-related-practitioner",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/scanned-document"
+        },
+        "name": "ScannedDocument",
         "exampleBoolean": false
       }
     ],

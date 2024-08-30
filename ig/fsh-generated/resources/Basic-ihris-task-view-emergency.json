@@ -1,0 +1,40 @@
+{
+  "resourceType": "Basic",
+  "id": "ihris-task-view-emergency",
+  "meta": {
+    "profile": [
+      "http://ihris.org/fhir/StructureDefinition/ihris-task"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "task",
+        "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+      "valueString": "view-emergency"
+    },
+    {
+      "extension": [
+        {
+          "url": "permission",
+          "valueCode": "special"
+        },
+        {
+          "url": "resource",
+          "valueCode": "special"
+        },
+        {
+          "url": "instance",
+          "valueId": "view-emergency"
+        }
+      ],
+      "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+    }
+  ]
+}

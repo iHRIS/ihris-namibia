@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2024-08-29T18:34:00.491Z",
+        "when": "2024-08-30T09:04:24.328Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "TzgS1fzIBj0gh0MADJfkExERGZAsqqmy/sAvy1duwCof3ezs/5tq8UA+HILMWTlxJwwE+UBVdfmAP7jwjZ7Hz83U7dUW+rdWPWEhSgS2F0xgSzar+nsR74oJt7/f4jGPbsZHfCBa8TOrRLP85XYAiXe2UOV5n44LXAIPmmYqW04="
+        "data": "uvBBZG3dGLVtvTxtuQpyYCJ3E+UQTu8RY4SFIP1t7CYvRfMooqtOtzvy6tTlh9EU0BJKVvLA8iDJdKo/1wwush1Cn4mNNSKzCmMuoRqJ/mVG5C4qY8znnJxljkQSW5ZHnYcxQZN0pEokWZWdCQkC3qS3yNs5j2lO06nMrA6GIS4="
       }
     },
     {
@@ -164,7 +164,7 @@
         },
         {
           "name": "site:nav:menu:person:menu:person_search:text",
-          "valueString": "Search People"
+          "valueString": "Search CHWs"
         },
         {
           "name": "site:nav:menu:person:menu:person_search:url",
@@ -172,7 +172,7 @@
         },
         {
           "name": "site:nav:menu:person:menu:person_add:text",
-          "valueString": "Add Person"
+          "valueString": "Add Community Health Worker"
         },
         {
           "name": "site:nav:menu:person:menu:person_add:url",
