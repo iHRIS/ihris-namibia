@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2024-08-30T09:04:24.328Z",
+        "when": "2024-08-30T09:11:42.604Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "uvBBZG3dGLVtvTxtuQpyYCJ3E+UQTu8RY4SFIP1t7CYvRfMooqtOtzvy6tTlh9EU0BJKVvLA8iDJdKo/1wwush1Cn4mNNSKzCmMuoRqJ/mVG5C4qY8znnJxljkQSW5ZHnYcxQZN0pEokWZWdCQkC3qS3yNs5j2lO06nMrA6GIS4="
+        "data": "wMQ9eGXOcUHVX/BlZhphfHETioO5vG49vu548sCWU2OqXyWUqmOLe8uaSvpBkYkQLrXZQOdudDrVtbtkd5d/smI1t0HeTTzchzOEdXEXjLCGesd9rE/WbtQrGBJP9XxOGs3iMVb6+3VXLTkDVwAPFpjkIXg7F8TJO2PwLFk7KjU="
       }
     },
     {
@@ -729,6 +729,14 @@
         {
           "name": "workflow:questionnaire:banking:url",
           "valueString": "http://ihris.org/fhir/Questionnaire/ihris-banking"
+        },
+        {
+          "name": "workflow:processor:documents:file",
+          "valueString": "workflowNamScannedDoc"
+        },
+        {
+          "name": "workflow:questionnaire:documents:url",
+          "valueString": "http://ihris.org/fhir/Questionnaire/ihris-scanned-document"
         },
         {
           "name": "workflow:processor:user:file",
