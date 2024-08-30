@@ -1094,7 +1094,7 @@
           "user content"
         ],
         "min": 0,
-        "max": "*",
+        "max": "1",
         "base": {
           "path": "Element.extension",
           "min": 0,
@@ -1288,7 +1288,7 @@
         },
         "type": [
           {
-            "code": "Coding"
+            "code": "Reference"
           }
         ],
         "constraint": [
@@ -1311,10 +1311,10 @@
         ]
       },
       {
-        "id": "Basic.extension:inservicetraining.extension:training.value[x]:valueCoding",
+        "id": "Basic.extension:inservicetraining.extension:training.value[x]:valueReference",
         "path": "Basic.extension.extension.value[x]",
-        "sliceName": "valueCoding",
-        "label": "Training Type",
+        "sliceName": "valueReference",
+        "label": "Training",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
@@ -1326,7 +1326,10 @@
         },
         "type": [
           {
-            "code": "Coding"
+            "code": "Reference",
+            "targetProfile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-training"
+            ]
           }
         ],
         "constraint": [
@@ -1342,10 +1345,6 @@
         "mustSupport": true,
         "isModifier": false,
         "isSummary": false,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://ihris.org/fhir/ValueSet/ihris-training-valueset"
-        },
         "mapping": [
           {
             "identity": "rim",

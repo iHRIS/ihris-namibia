@@ -21,16 +21,99 @@
         {
           "url": "resource",
           "valueReference": {
-            "reference": "CodeSystem/ihris-training-codesystem"
+            "reference": "StructureDefinition/ihris-training"
           }
         },
         {
           "url": "search",
-          "valueString": "Code|code"
+          "valueString": "Training Title|Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-basic-name').valueString"
+        },
+        {
+          "extension": [
+            {
+              "url": "url",
+              "valueUrl": "/resource/view/training/FIELD?edit=true"
+            },
+            {
+              "url": "text",
+              "valueString": "Edit"
+            },
+            {
+              "url": "field",
+              "valueString": "Basic.id"
+            },
+            {
+              "url": "button",
+              "valueBoolean": true
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-pencil"
+            },
+            {
+              "url": "class",
+              "valueString": "secondary"
+            }
+          ],
+          "url": "link"
+        },
+        {
+          "extension": [
+            {
+              "url": "url",
+              "valueUrl": "/questionnaire/ihris-training/training"
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-plus-circle-outline"
+            },
+            {
+              "url": "text",
+              "valueString": "Add Another"
+            },
+            {
+              "url": "button",
+              "valueBoolean": true
+            },
+            {
+              "url": "class",
+              "valueString": "secondary"
+            }
+          ],
+          "url": "link"
+        },
+        {
+          "extension": [
+            {
+              "url": "url",
+              "valueUrl": "/questionnaire/ihris-training/training"
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-account-plus"
+            },
+            {
+              "url": "class",
+              "valueString": "accent"
+            }
+          ],
+          "url": "add"
         },
         {
           "url": "search",
-          "valueString": "Display|display"
+          "valueString": "Part Of|Basic.extension.where(url = 'http://ihris.org/fhir/StructureDefinition/ihris-training-classification').valueReference"
+        },
+        {
+          "url": "search",
+          "valueString": "Category|Basic.extension.where(url = 'http://ihris.org/fhir/StructureDefinition/ihris-training-category').valueCoding.display"
+        },
+        {
+          "url": "filter",
+          "valueString": "Training Title|name:contains"
+        },
+        {
+          "url": "filter",
+          "valueString": "Catergory|trainingByCategory|http://ihris.org/fhir/ValueSet/ihris-training-valueset"
         }
       ]
     },
@@ -38,27 +121,27 @@
       "extension": [
         {
           "url": "title",
-          "valueString": "In-Service Training Type"
+          "valueString": "Training"
         },
         {
           "url": "description",
-          "valueString": "In-Service Training"
+          "valueString": "Training"
         },
         {
           "url": "name",
-          "valueString": "CodeSystem"
+          "valueString": "Basic"
         },
         {
           "url": "field",
-          "valueString": "CodeSystem.display"
+          "valueString": "Basic.extension:name"
         },
         {
           "url": "field",
-          "valueString": "CodeSystem.code"
+          "valueString": "Basic.extension:classification"
         },
         {
           "url": "field",
-          "valueString": "CodeSystem.definition"
+          "valueString": "Basic.extension:category"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"

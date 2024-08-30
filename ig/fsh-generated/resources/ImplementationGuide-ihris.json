@@ -236,6 +236,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ihris-training"
+        },
+        "name": "Training",
+        "description": "iHRIS Profile of the Basic resource to training.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/composite-task"
         },
         "name": "Composite Task",
@@ -516,6 +524,20 @@
         },
         "name": "iHRIS Practitioner Residence",
         "description": "iHRIS Test extension for Practitioner residence.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ihris-training-category"
+        },
+        "name": "Training Category",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ihris-training-classification"
+        },
+        "name": "Training Classification",
         "exampleBoolean": false
       },
       {
@@ -1707,6 +1729,13 @@
         "reference": {
           "reference": "Basic/ihris-page-training"
         },
+        "name": "iHRIS Training Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-page-trainingtype"
+        },
         "name": "iHRIS Training CodeSystem Page",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
       },
@@ -2153,6 +2182,13 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/ihris-training"
+        },
+        "name": "IhrisTrainingWorkflow",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/ihris-user"
         },
         "name": "IhrisUser",
@@ -2331,6 +2367,13 @@
           "reference": "Questionnaire/scanned-document"
         },
         "name": "ScannedDocument",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/trainingByCategory-search"
+        },
+        "name": "trainingByCategory-search",
         "exampleBoolean": false
       }
     ],

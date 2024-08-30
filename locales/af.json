@@ -69,7 +69,9 @@
       "Search CHWs": "",
       "Add Community Health Worker": "",
       "Organization": "",
-      "Languages": ""
+      "Languages": "",
+      "Training Category": "",
+      "Training": ""
     },
     "intro": {
       "Person Information": "Persoon inligting",
@@ -522,7 +524,16 @@
       "Basic": "",
       "": "",
       "Scanned Documents": "",
-      "Add Scanned Document": ""
+      "Add Scanned Document": "",
+      "Training": "",
+      "Add Training": "",
+      "Training Title": "",
+      "Category": "",
+      "Training details": "",
+      "Part Of": "",
+      "Catergory": "",
+      "Training name": "",
+      "Training Category": ""
     },
     "hardcoded-texts": {
       "must be an integer": "",

@@ -30,11 +30,10 @@
               "repeats": false
             },
             {
-              "linkId": "Basic.extension[0].extension[1]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-inservice-training#Basic.extension:inservicetraining.extension:training.value[x]:valueCoding",
-              "text": "Training Type",
-              "type": "choice",
-              "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-training-valueset",
+              "linkId": "Basic.extension[0].extension[1]#tree",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-inservice-training#Basic.extension:inservicetraining.extension:training.value[x]:valueReference",
+              "text": "Training",
+              "type": "reference",
               "required": true,
               "repeats": false
             },

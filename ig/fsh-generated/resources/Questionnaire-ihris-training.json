@@ -1,0 +1,51 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "ihris-training",
+  "meta": {
+    "profile": [
+      "http://ihris.org/fhir/StructureDefinition/ihris-questionnaire"
+    ]
+  },
+  "url": "http://ihris.org/fhir/Questionnaire/ihris-training",
+  "title": "iHRIS Manage Position Workflow",
+  "description": "iHRIS workflow to manage Position",
+  "name": "ihris-training",
+  "status": "active",
+  "date": "2022-08-23",
+  "purpose": "Workflow page for recording a training.",
+  "item": [
+    {
+      "linkId": "Basic",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-training",
+      "text": "Add Training",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Basic.extension[0]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-training#Basic.extension:name.value[x]:valueString",
+          "text": "Training Title",
+          "type": "string",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[1]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-training#Basic.extension:category.value[x]:valueCoding",
+          "text": "Category",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-training-valueset",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[2]#tree",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-training#Basic.extension:classification.value[x]:valueReference",
+          "text": "Classification",
+          "type": "reference",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    }
+  ]
+}

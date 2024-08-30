@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2024-08-30T09:19:48.449Z",
+        "when": "2024-08-30T11:03:02.321Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "wMQ9eGXOcUHVX/BlZhphfHETioO5vG49vu548sCWU2OqXyWUqmOLe8uaSvpBkYkQLrXZQOdudDrVtbtkd5d/smI1t0HeTTzchzOEdXEXjLCGesd9rE/WbtQrGBJP9XxOGs3iMVb6+3VXLTkDVwAPFpjkIXg7F8TJO2PwLFk7KjU="
+        "data": "o2AoBqjJoFQZIf90XFXBFruDuhOh8A2bISAP/eg01Q9w8ERXAcCszJ9B8Ugs1GGDc62cMnqXtxuN5XA3j4Hx2XWnIFTJm3gD86RjFf74VgCeOvOj1NdJLlKmJhgm7+/oR2vS81hA6dErGU3yVsF6lu8AiLzuJ9nBaSajdI7wR3o="
       }
     },
     {
@@ -331,8 +331,20 @@
           "valueString": "1"
         },
         {
+          "name": "site:nav:menu:database:menu:eduLists:menu:category:text",
+          "valueString": "Training Category"
+        },
+        {
+          "name": "site:nav:menu:database:menu:eduLists:menu:category:url",
+          "valueString": "/resource/search/trainingtype"
+        },
+        {
+          "name": "site:nav:menu:database:menu:eduLists:menu:category:order",
+          "valueString": "2"
+        },
+        {
           "name": "site:nav:menu:database:menu:eduLists:menu:training:text",
-          "valueString": "Training Type"
+          "valueString": "Training"
         },
         {
           "name": "site:nav:menu:database:menu:eduLists:menu:training:url",
@@ -340,7 +352,7 @@
         },
         {
           "name": "site:nav:menu:database:menu:eduLists:menu:training:order",
-          "valueString": "2"
+          "valueString": "3"
         },
         {
           "name": "site:nav:menu:database:menu:otherLists:text",
@@ -691,6 +703,30 @@
           "valueString": "$1"
         },
         {
+          "name": "defaults:fields:Basic.extension:classification.value[x]:valueReference:type",
+          "valueString": "tree"
+        },
+        {
+          "name": "defaults:fields:Basic.extension:classification.value[x]:valueReference:searchParameter",
+          "valueString": "name"
+        },
+        {
+          "name": "defaults:fields:Basic.extension:classification.value[x]:valueReference:initialProfile",
+          "valueString": "http://ihris.org/fhir/StructureDefinition/ihris-training"
+        },
+        {
+          "name": "defaults:fields:Basic.extension:inservicetraining.extension:training.value[x]:valueReference:initialProfile",
+          "valueString": "http://ihris.org/fhir/StructureDefinition/ihris-training"
+        },
+        {
+          "name": "defaults:fields:Basic.extension:inservicetraining.extension:training.value[x]:valueReference:searchParameter",
+          "valueString": "name"
+        },
+        {
+          "name": "defaults:fields:Basic.extension:inservicetraining.extension:training.value[x]:valueReference:type",
+          "valueString": "tree"
+        },
+        {
           "name": "workflow:processor:endrole:file",
           "valueString": "workflowEndRole"
         },
@@ -737,6 +773,14 @@
         {
           "name": "workflow:questionnaire:documents:url",
           "valueString": "http://ihris.org/fhir/Questionnaire/ihris-scanned-document"
+        },
+        {
+          "name": "workflow:processor:trainingtype:file",
+          "valueString": "workflowNamTrainingType"
+        },
+        {
+          "name": "workflow:questionnaire:trainingtype:url",
+          "valueString": "http://ihris.org/fhir/Questionnaire/ihris-training"
         },
         {
           "name": "workflow:processor:user:file",

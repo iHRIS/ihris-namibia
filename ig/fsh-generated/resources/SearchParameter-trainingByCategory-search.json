@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "trainingByCategory-search",
+  "url": "http://ihris.org/fhir/SearchParameter/trainingByCategory-search",
+  "name": "Search Parameter for a manage training By Category",
+  "status": "active",
+  "description": "Search for manage training By Category",
+  "code": "trainingByCategory",
+  "base": [
+    "Basic"
+  ],
+  "type": "token",
+  "expression": "Basic.extension.where(url = 'http://ihris.org/fhir/StructureDefinition/ihris-training-category')",
+  "xpath": "f:Basic/f:extension[@url='http://ihris.org/fhir/StructureDefinition/ihris-training-category']",
+  "xpathUsage": "normal"
+}
