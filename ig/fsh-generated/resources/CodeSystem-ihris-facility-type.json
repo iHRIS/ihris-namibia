@@ -5,7 +5,7 @@
   "name": "IhrisFacilityType",
   "id": "ihris-facility-type",
   "title": "Facility Type",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
   "concept": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "code": "HC",
-      "display": "Health Center"
+      "display": "Health Centre"
     },
     {
       "code": "RHO",
@@ -47,8 +47,24 @@
     {
       "code": "DH",
       "display": "District Hospital"
+    },
+    {
+      "code": "RC",
+      "display": "Rehab Centre"
+    },
+    {
+      "code": "CBART",
+      "display": "CBART"
+    },
+    {
+      "code": "MV",
+      "display": "Mobile Van"
+    },
+    {
+      "code": "MIMS",
+      "display": "MIMS"
     }
   ],
-  "date": "2023-02-25T08:41:04.362Z",
-  "count": 10
+  "date": "2023-03-25T08:41:04.362Z",
+  "count": 14
 }

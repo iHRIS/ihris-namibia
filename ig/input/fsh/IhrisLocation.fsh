@@ -185,17 +185,17 @@ Title:           "Jurisdiction Type"
 ValueSet:         IhrisFacilityTypeValueSet
 Id:               ihris-facility-type
 Title:            "iHRIS Facility Type ValueSet"
-* ^date = "2023-02-25T08:41:04.362Z"
-* ^version = "0.10.0"
+* ^date = "2023-03-25T08:41:04.362Z"
+* ^version = "0.11.0"
 * codes from system IhrisFacilityType
 
 CodeSystem:      IhrisFacilityType
 Id:              ihris-facility-type
 Title:           "Facility Type"
-* ^date = "2023-02-25T08:41:04.362Z"
-* ^version = "0.10.0"
+* ^date = "2023-03-25T08:41:04.362Z"
+* ^version = "0.11.0"
 * #hospital "Hospital"
-* #HC "Health Center"
+* #HC "Health Centre"
 * #RHO "Regional Health Office"
 * #DHO "District Health Office"
 * #IH "Intermediate Hospital"
@@ -204,6 +204,11 @@ Title:           "Facility Type"
 * #LAB "Laboratory"
 * #RH "Referral Hospital"
 * #DH "District Hospital"
+* #RC "Rehab Centre"
+* #CBART "CBART"
+* #MV "Mobile Van"
+* #MIMS "MIMS"
+
 
 Extension:      IhrisFacilityOwnership
 Id:             ihris-facility-ownership-prefix
