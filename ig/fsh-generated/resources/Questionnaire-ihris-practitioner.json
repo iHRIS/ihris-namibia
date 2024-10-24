@@ -73,15 +73,6 @@
           "repeats": false
         },
         {
-          "linkId": "Practitioner.extension[1]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:racialGroup.value[x]:valueCoding",
-          "text": "Racial Group",
-          "type": "choice",
-          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-namibia-racial-group",
-          "required": false,
-          "repeats": false
-        },
-        {
           "linkId": "Practitioner.extension[2]",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:maritalStatus.value[x]:valueCoding",
           "text": "Marital Status",

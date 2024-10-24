@@ -80,7 +80,6 @@ Description:    "iHRIS profile of Practitioner."
     IhrisPractitionerResidence named residence 0..1 MS and
     IhrisPractitionerNationality named nationality 0..1 and
     IhrisPractitionerMaritalStatus named maritalStatus 0..1 and
-    IhrisPractitionerRacialGroup named racialGroup 0..1 and
     IhrisPractitionerPhysicalStatus named physicalStatus 0..1 MS and
     IhrisPractitionerLanguage named language 0..* MS
 * extension[residence] ^label = "Residence"
@@ -89,8 +88,6 @@ Description:    "iHRIS profile of Practitioner."
 * extension[nationality].valueCoding MS
 * extension[maritalStatus]  ^label = "Marital Status"
 * extension[maritalStatus].valueCoding MS
-* extension[racialGroup]  ^label = "Racial Group"
-* extension[racialGroup].valueCoding MS
 * extension[physicalStatus].valueCoding MS
 * extension[physicalStatus] ^label = "Person with Disability"
 * extension[language] ^label = "Language"

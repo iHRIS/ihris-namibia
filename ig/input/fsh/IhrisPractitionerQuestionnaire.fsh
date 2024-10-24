@@ -64,50 +64,50 @@ Usage:          #definition
 * item[0].item[3].required = false
 * item[0].item[3].repeats = false
 
-* item[0].item[4].linkId = "Practitioner.extension[1]"
-* item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:racialGroup.value[x]:valueCoding"
-* item[0].item[4].text = "Racial Group"
+// * item[0].item[4].linkId = "Practitioner.extension[1]"
+// * item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:racialGroup.value[x]:valueCoding"
+// * item[0].item[4].text = "Racial Group"
+// * item[0].item[4].type = #choice
+// * item[0].item[4].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-namibia-racial-group"
+// * item[0].item[4].required = false
+// * item[0].item[4].repeats = false
+
+* item[0].item[4].linkId = "Practitioner.extension[2]"
+* item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:maritalStatus.value[x]:valueCoding"
+* item[0].item[4].text = "Marital Status"
 * item[0].item[4].type = #choice
-* item[0].item[4].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-namibia-racial-group"
+* item[0].item[4].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-marital-status-valueset"
 * item[0].item[4].required = false
 * item[0].item[4].repeats = false
 
-* item[0].item[5].linkId = "Practitioner.extension[2]"
-* item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:maritalStatus.value[x]:valueCoding"
-* item[0].item[5].text = "Marital Status"
+* item[0].item[5].linkId = "Practitioner.extension[3]"
+* item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:physicalStatus.value[x]:valueCoding"
+* item[0].item[5].text = "Person with Disability"
 * item[0].item[5].type = #choice
-* item[0].item[5].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-marital-status-valueset"
+* item[0].item[5].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
 * item[0].item[5].required = false
 * item[0].item[5].repeats = false
 
-* item[0].item[6].linkId = "Practitioner.extension[3]"
-* item[0].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:physicalStatus.value[x]:valueCoding"
-* item[0].item[6].text = "Person with Disability"
-* item[0].item[6].type = #choice
-* item[0].item[6].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
+* item[0].item[6].linkId = "Practitioner.extension[4]"
+* item[0].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:residence.value[x]:valueReference"
+* item[0].item[6].text = "Residence"
+* item[0].item[6].type = #reference
 * item[0].item[6].required = false
 * item[0].item[6].repeats = false
 
-* item[0].item[7].linkId = "Practitioner.extension[4]"
-* item[0].item[7].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:residence.value[x]:valueReference"
-* item[0].item[7].text = "Residence"
-* item[0].item[7].type = #reference
+* item[0].item[7].linkId = "Practitioner.extension[5]"
+* item[0].item[7].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:language.value[x]:valueCoding"
+* item[0].item[7].text = "Languages"
+* item[0].item[7].type = #choice
+* item[0].item[7].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-languages-valueset"
 * item[0].item[7].required = false
-* item[0].item[7].repeats = false
+* item[0].item[7].repeats = true
 
-* item[0].item[8].linkId = "Practitioner.extension[5]"
-* item[0].item[8].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:language.value[x]:valueCoding"
-* item[0].item[8].text = "Languages"
-* item[0].item[8].type = #choice
-* item[0].item[8].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-languages-valueset"
-* item[0].item[8].required = false
-* item[0].item[8].repeats = true
-
-* item[0].item[9].linkId = "Practitioner.active"
-* item[0].item[9].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.active"
-* item[0].item[9].text = "Active"
-* item[0].item[9].type = #boolean
-* item[0].item[9].required = true
+* item[0].item[8].linkId = "Practitioner.active"
+* item[0].item[8].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.active"
+* item[0].item[8].text = "Active"
+* item[0].item[8].type = #boolean
+* item[0].item[8].required = true
 
 * item[1].linkId = "__Practitioner:contact"
 * item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner"
