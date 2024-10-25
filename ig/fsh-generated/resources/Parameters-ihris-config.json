@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2024-10-08T07:45:47.753Z",
+        "when": "2024-10-25T13:46:42.826Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "Zk6pkQBsjYweSUjjHv0+nbRuj5Iyarq5AAEOPIAl+4MPhozG1HanY7MCXIOjoU0dmuwCpkXwlWaGVGYQnGnsVPM3kVSmIkNTjdf6/85JTgbikjRm2QcMIBdTc+W1Vda2O+Q9g3Hvc6if7EqyfYNMYFpwysulqV0RLZeZrtAl5zs="
+        "data": "EwAHWPgWgYEIiQ79TZsxoMdwb3eAu7iB3gxrPCe6qoXGD8QCQ174D7K4z99Hb6ThS2bX2Xm626u7LfWaQSRMi88e96Ub7tzq8VWbyP/cQ2WYFnEJXJyMCldEQqMX03kEJ1b0s0mFQUDQcyP0PQVLzZ1b5RC9MIIrzEn4V/3niBk="
       }
     },
     {
@@ -163,19 +163,19 @@
           "valueString": "mdi-account-multiple"
         },
         {
-          "name": "site:nav:menu:person:menu:person_search:text",
+          "name": "site:nav:menu:person:menu:personSearch:text",
           "valueString": "Search CHWs"
         },
         {
-          "name": "site:nav:menu:person:menu:person_search:url",
+          "name": "site:nav:menu:person:menu:personSearch:url",
           "valueString": "/resource/search/practitioner"
         },
         {
-          "name": "site:nav:menu:person:menu:person_add:text",
+          "name": "site:nav:menu:person:menu:personAdd:text",
           "valueString": "Add Community Health Worker"
         },
         {
-          "name": "site:nav:menu:person:menu:person_add:url",
+          "name": "site:nav:menu:person:menu:personAdd:url",
           "valueString": "/questionnaire/ihris-practitioner/practitioner"
         },
         {
@@ -191,19 +191,19 @@
           "valueString": "mdi-account-multiple"
         },
         {
-          "name": "site:nav:menu:position:menu:position_search:text",
+          "name": "site:nav:menu:position:menu:positionSearch:text",
           "valueString": "Search Positions"
         },
         {
-          "name": "site:nav:menu:position:menu:position_search:url",
+          "name": "site:nav:menu:position:menu:positionSearch:url",
           "valueString": "/resource/search/practitionerrole"
         },
         {
-          "name": "site:nav:menu:position:menu:position_add:text",
+          "name": "site:nav:menu:position:menu:positionAdd:text",
           "valueString": "Add Position"
         },
         {
-          "name": "site:nav:menu:position:menu:position_add:url",
+          "name": "site:nav:menu:position:menu:positionAdd:url",
           "valueString": "/resource/add/practitionerrole"
         },
         {
@@ -219,19 +219,19 @@
           "valueString": "mdi-map-marker-multiple"
         },
         {
-          "name": "site:nav:menu:location:menu:location_search:text",
+          "name": "site:nav:menu:location:menu:locationSearch:text",
           "valueString": "Locations"
         },
         {
-          "name": "site:nav:menu:location:menu:location_search:url",
+          "name": "site:nav:menu:location:menu:locationSearch:url",
           "valueString": "/resource/search/location"
         },
         {
-          "name": "site:nav:menu:location:menu:facility_search:text",
+          "name": "site:nav:menu:location:menu:facilitySearch:text",
           "valueString": "Facilities"
         },
         {
-          "name": "site:nav:menu:location:menu:facility_search:url",
+          "name": "site:nav:menu:location:menu:facilitySearch:url",
           "valueString": "/resource/search/facility"
         },
         {
@@ -523,19 +523,27 @@
           "valueString": "mdi-account-box-outline"
         },
         {
-          "name": "site:nav:menu:users:menu:users_search:text",
+          "name": "site:nav:menu:users:menu:usersSearch:text",
           "valueString": "Search Users"
         },
         {
-          "name": "site:nav:menu:users:menu:users_search:url",
+          "name": "site:nav:menu:users:menu:usersSearch:url",
           "valueString": "/resource/search/user"
         },
         {
-          "name": "site:nav:menu:users:menu:role_tasks:text",
+          "name": "site:nav:menu:users:menu:userRoles:text",
+          "valueString": "User Roles"
+        },
+        {
+          "name": "site:nav:menu:users:menu:userRoles:url",
+          "valueString": "/resource/search/role"
+        },
+        {
+          "name": "site:nav:menu:users:menu:roleTask:text",
           "valueString": "User Role Tasks"
         },
         {
-          "name": "site:nav:menu:users:menu:role_tasks:url",
+          "name": "site:nav:menu:users:menu:roleTask:url",
           "valueString": "/resource/search/task"
         },
         {
@@ -727,6 +735,14 @@
           "valueString": "tree"
         },
         {
+          "name": "defaults:fields:Basic.extension:task.value[x]:valueReference:type",
+          "valueString": "tree"
+        },
+        {
+          "name": "defaults:fields:Basic.extension:role.value[x]:valueReference:type",
+          "valueString": "tree"
+        },
+        {
           "name": "workflow:processor:endrole:file",
           "valueString": "workflowEndRole"
         },
@@ -789,6 +805,22 @@
         {
           "name": "workflow:questionnaire:user:url",
           "valueString": "http://ihris.org/fhir/Questionnaire/ihris-user"
+        },
+        {
+          "name": "workflow:processor:role:file",
+          "valueString": "workflowUserRole"
+        },
+        {
+          "name": "workflow:questionnaire:role:url",
+          "valueString": "http://ihris.org/fhir/Questionnaire/ihris-role"
+        },
+        {
+          "name": "workflow:processor:task:file",
+          "valueString": "workflowUserTask"
+        },
+        {
+          "name": "workflow:questionnaire:task:url",
+          "valueString": "http://ihris.org/fhir/Questionnaire/ihris-task"
         },
         {
           "name": "defaults:components:date-time:minValueDateTime",

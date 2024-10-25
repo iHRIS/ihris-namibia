@@ -1694,7 +1694,7 @@
         "reference": {
           "reference": "Basic/ihris-page-role"
         },
-        "name": "NHWR Roles",
+        "name": "Roles",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
       },
       {
@@ -1902,6 +1902,13 @@
       },
       {
         "reference": {
+          "reference": "Basic/ihris-task-read-auditevent-resource"
+        },
+        "name": "iHRIS Task To Read AuditEvent resource",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-task-read-basic-resource"
         },
         "name": "iHRIS Task To Read Basic resource",
@@ -2077,6 +2084,13 @@
       },
       {
         "reference": {
+          "reference": "Basic/ihris-task-write-auditevent-resource"
+        },
+        "name": "iHRIS Task To Write AuditEvent resource",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-task-write-basic-resource"
         },
         "name": "iHRIS Task To Write Basic resource",
@@ -2169,6 +2183,13 @@
       {
         "reference": {
           "reference": "Basic/ihris-task-write-value-set"
+        },
+        "name": "iHRIS Task To Write Valueset Resource",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-task-write-valueset-resource"
         },
         "name": "iHRIS Task To Write Valueset Resource",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-task"
